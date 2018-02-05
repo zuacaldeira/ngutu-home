@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+:root {
+    --body-background-color: black;
+    --wrapper-background-color: black;
+    --header-background-color: red;
+    --logo-color: rgba(255, 250, 255, 0.75);
+    --logo-ff: 'Dosis', 'Arial', sans-serif;
+    --logo-border: 5px solid orange;
+    --logo-background-color: 5px solid orange;
+    --navi-background-color: white;
+    --navi-link-color: darkgray;
+    --navi-active-link-background: orange;
+    --content-background-color: black;
+    --content-border-color: orange;
+    --footer-background-color: var(--navi-background-color);
+    --padding-left: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--body-background-color);
+}
+
+#wrapper {
+    width: 1000px;
+    height: 720px;
+    margin: 0 auto;
+    font-family: var(--logo-ff);
+}
+
+#header {
+    width: 1000px;
+    height: 200px;
+    background-image: url(../images/African-Animals-Wallpapers-Images.jpg);
+    background-size: cover;
+    background-position: left -150px;
+    background-color: var(--wrapper-background-color);
+}
+
+#logo {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    font-size: 3.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--logo-color);
+    border: var(--logo-border);
+    padding: 0 5px;
+}
+
+
+/* NAVI */
+
+#navi {
+    width: 1000px;
+    height: 40px;
+    background: var(--navi-background-color);
+    font-family: var(--ff);
+}
+
+
+#navi ul {
+    list-style: none;
+    width: 1000px;
+    height: 40px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#navi ul li {
+    display: inline;
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #a1b2c3;
+}
+
+
+#navi ul li:last-child
+{
+    border-right: none;    
+}
+
+#navi ul li a,
+#navi ul li a:hover,
+#navi ul li a:active,
+#navi ul li a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--navi-link-color);
+}
+
+
+#navi ul li a:hover
+{
+    color: var(--navi-active-link-background);    
+}
+
+#navi ul li.active a {
+    color: var(--navi-active-link-background);
+}
+
+
+/* CONTENT */
+
+#content {
+    width: 980px;
+    height: 68%;
+    border: 10px solid var(--content-border-color);
+    background-color: var(--content-background-color)
+}
+
+
+/* FOOTER */
+#footer {
+    width: 100%;
+    height: 40px;
+    background: var(--footer-background-color);
+}
+
+#footer ul {
+    list-style: none;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#footer ul li {
+    display: inline;
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #a1b2c3;
+}
+
+#footer ul li:last-child
+{
+    border-right: none;    
+}
+
+#footer ul li a,
+#footer ul li a:hover,
+#footer ul li a:active,
+#footer ul li a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: var(--navi-link-color);
+}
+
+#footer ul li a:hover
+{
+    color: var(--navi-active-link-background);    
+}
