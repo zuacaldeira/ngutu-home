@@ -6,13 +6,14 @@
     --header-background-color: red;
     --logo-color: rgba(255, 250, 255, 0.75);
     --logo-ff: 'Dosis', 'Arial', sans-serif;
-    --logo-border: 5px solid orange;
-    --logo-background-color: 5px solid orange;
+    --logo-background-color: orange;
+    --logo-border: 5px solid var(--logo-background-color);
     --navi-background-color: white;
     --navi-link-color: darkgray;
-    --navi-active-link-background: orange;
+    --navi-active-link-background: var(--logo-background-color);
     --content-background-color: black;
-    --content-border-color: orange;
+    --content-color: white;
+    --content-border-color: var(--logo-background-color);
     --footer-background-color: var(--navi-background-color);
     --padding-left: 50px;
 }
@@ -28,8 +29,7 @@ body {
 
 #wrapper {
     width: 1000px;
-    height: 720px;
-    margin: 0 auto;
+    margin: 10px auto;
     font-family: var(--logo-ff);
 }
 
@@ -44,8 +44,8 @@ body {
 
 #logo {
     position: absolute;
-    top: 15%;
-    left: 7%;
+    top: 100px;
+    left: 50px;
     font-size: 3.5em;
     font-weight: 900;
     text-transform: uppercase;
@@ -113,9 +113,27 @@ body {
 
 #content {
     width: 980px;
-    height: 68%;
+    min-height: 365px;
     border: 10px solid var(--content-border-color);
-    background-color: var(--content-background-color)
+    background-color: var(--content-background-color);
+    overflow: scroll;
+    margin: 0 auto;
+    color: var(--content-color);
+}
+
+#galarie
+{
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+
+#galarie img
+{
+    width: 100%;
+    height: auto;
 }
 
 
