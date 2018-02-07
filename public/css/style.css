@@ -1,124 +1,230 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
 :root {
-    --body-background-color: black;
-    --wrapper-background-color: black;
-    --header-background-color: red;
-    --logo-color: rgba(255, 250, 255, 0.75);
+    --color1: rgba(0,0,0,5);
+    --color2: rgba(0,0,0,.95);
+    --color3: rgba(255,0,0,.75);
+    --color4: rgba(255, 250, 255, 0.75);
     --logo-ff: 'Dosis', 'Arial', sans-serif;
-    --logo-background-color: orange;
-    --logo-border: 5px solid var(--logo-background-color);
-    --navi-background-color: white;
-    --navi-link-color: darkgray;
-    --navi-active-link-background: var(--logo-background-color);
-    --content-background-color: black;
-    --content-color: white;
-    --content-border-color: var(--logo-background-color);
-    --footer-background-color: var(--navi-background-color);
-    --padding-left: 50px;
 }
+
+
+@keyframes come-in {
+    0% {
+        font-size: 5em;
+    }
+    100%
+    {
+        font-size: 3em;
+    }
+}
+
 
 * {
     margin: 0;
     padding: 0;
+    opacity: .99;
 }
 
 body {
-    background: var(--body-background-color);
-}
-
-#wrapper {
-    width: 1000px;
-    margin: 10px auto;
+    background: var(--color1);
     font-family: var(--logo-ff);
-}
-
-#header {
-    width: 1000px;
-    height: 200px;
-    background-image: url(../images/African-Animals-Wallpapers-Images.jpg);
+    font-size: 14px;
+    letter-spacing: .05em;
+    background-image: url(https://source.unsplash.com/random);
+    background-repeat:  no-repeat;
     background-size: cover;
-    background-position: left -150px;
-    background-color: var(--wrapper-background-color);
+    background-position: center center;
 }
 
-#logo {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    font-size: 3.5em;
-    font-weight: 900;
+.clearer
+{
+    clear: both;
+}
+
+header {
+    height: 20vh;
+}
+
+header #logo {
+    font-size: 2.5em;
+    font-weight: bold;
     text-transform: uppercase;
-    color: var(--logo-color);
-    border: var(--logo-border);
-    padding: 0 5px;
+    color: var(--color3);
+    border: .1em solid var(--color3);
+    float: left;
+    padding: 0 .3em;
 }
 
 
 /* NAVI */
-
-#navi {
-    width: 1000px;
-    height: 40px;
-    background: var(--navi-background-color);
+nav {
+    height: 5vh;
+    background: var(--color4);
     font-family: var(--ff);
 }
 
-
-#navi ul {
-    list-style: none;
-    width: 1000px;
-    height: 40px;
-    padding: 10px;
-    margin-left: 10px;
+nav.top
+{
+    position: relative;    
 }
 
-#navi ul li {
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    height: 5vh;
+    line-height: 5vh;
+    padding-left: 1vw;
+}
+
+nav ul li {
     display: inline;
     float: left;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-right: 1px solid #a1b2c3;
+    padding-right: .5em;
+    padding-left: .5em;
 }
 
 
-#navi ul li:last-child
+nav ul li:last-child
 {
     border-right: none;    
 }
 
-#navi ul li a,
-#navi ul li a:hover,
-#navi ul li a:active,
-#navi ul li a:visited {
+nav ul li a,
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a:visited {
     text-decoration: none;
+    text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--navi-link-color);
+    letter-spacing: .1em;
+    word-spacing: .15em;
+    color: var(--color1);
 }
 
 
-#navi ul li a:hover
+nav ul li a:hover
 {
-    color: var(--navi-active-link-background);    
+    color: var(--color3);
+    font-weight: bold;
 }
 
-#navi ul li.active a {
-    color: var(--navi-active-link-background);
+nav ul li.active a {
+    color:var(--color3);
 }
 
 
 /* CONTENT */
 
-#content {
-    width: 980px;
-    min-height: 365px;
-    border: 10px solid var(--content-border-color);
-    background-color: var(--content-background-color);
+main {
+    height: 70vh;
+    width: calc(100%-1em);
     overflow: scroll;
-    margin: 0 auto;
+    background-color: var(--content-background-color);
     color: var(--content-color);
+    text-align: center;
+}
+
+main h1
+{
+    padding-top: 25vh;
+    font-size: 3em;
+    height: 45vh;
+    background: var(--color4);
+    color: var(--color1);
+    animation: come-in 30s;
+}
+
+main article
+{
+    width: 100%;
+    height: 71vh;
+}
+
+main article.top
+{
+    background: var(--color1);
+    color: DARKgray;
+}
+
+main article.middle
+{
+    background-color: #fffcee;
+    color: darkgray;
+}
+
+main article.bottom
+{
+    background: rgba(255,0,0,.5);
+    color: lightgray;
+}
+
+main article h2
+{
+    font-size: 2.5em;
+    width: 100%;
+    padding: 2em 0 2em 0;
+}
+
+
+main article .card
+{
+    width: 21em;
+    height: 15em;
+    color:rgba(255, 255, 255, .5);
+    border-radius: 2%;
+    padding: 1em 1em 0 1em;
+    margin: 0 1em 0 1em;
+    float: left;
+    text-align: left;
+    border: .2em solid rgba(255, 255, 255, .5);
+    overflow: scroll;
+}
+
+main article .card:hover
+{
+    transform: scale(1.01);
+}
+
+
+main article .card h3
+{
+    color: rgba(255, 255, 255, .5);
+    font-size: 1.8em;
+    padding-bottom: .4em;
+}
+
+
+main article .card ul
+{
+    list-style: none;
+}
+
+main article .card li
+{
+    padding-top: .5em; 
+}
+
+main article .card li a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, .5);
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+main article .card li a:hover
+{
+    font-weight: 900;
+    color: yellow;
+}
+
+
+main article:nth-child(2)
+{
+    float: 
 }
 
 #galarie
@@ -138,45 +244,3 @@ body {
 
 
 /* FOOTER */
-#footer {
-    width: 100%;
-    height: 40px;
-    background: var(--footer-background-color);
-}
-
-#footer ul {
-    list-style: none;
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    margin-left: 10px;
-}
-
-#footer ul li {
-    display: inline;
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-right: 1px solid #a1b2c3;
-}
-
-#footer ul li:last-child
-{
-    border-right: none;    
-}
-
-#footer ul li a,
-#footer ul li a:hover,
-#footer ul li a:active,
-#footer ul li a:visited {
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    color: var(--navi-link-color);
-}
-
-#footer ul li a:hover
-{
-    color: var(--navi-active-link-background);    
-}
