@@ -51,6 +51,7 @@ body {
     overflow: hidden;
     height: 0;
     clear: both;
+    display: block;
 }
 
 
@@ -146,7 +147,7 @@ main {
 main article
 {
     width: 100%;
-    height: 160vh;
+    min-height: 80vh;
     background: var(--color-article);
     color: white;
     align-content: center;
@@ -194,12 +195,24 @@ main article p
     text-align: left;
 }
 
-
 main article.home
 {
     background: var(--color-red);
     color: WHITE;
 }
+
+main article.bottom
+{
+    background: var(--color-red);
+    color: WHITE;
+}
+
+main article.bottom div
+{
+    padding-top: 5%
+}
+
+
 
 main article.about-us
 {
@@ -249,18 +262,52 @@ main article.blog
 }
 
 
-.gallery .images {
-    list-style: none;
-    padding-top: 3em; 
+fieldset{
+    border: none;
+    width: 400px;
+    margin: 3em auto;
 }
 
-.gallery .images li {
-    display: inline-block;
-    height: 200px;
+fieldset .abstand{
+    margin-bottom: 7px;
+    clear: both;
 }
 
-.gallery .images section {
+fieldset label {
+    padding-top: 5px;
+    text-align: left;
     float: left;
+    width: 90px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
+
+fieldset input,
+fieldset textarea {
+    width: 250px;
+    padding: 5px 5px;
+    font-size: 1em;
+}
+
+fieldset form div input[type="submit"],
+fieldset form div input[type="reset"]
+{
+    width: 70px;
+    padding: 1px 0px 5px 0px;
+    margin: 20px 20px 0px 110px;
+}
+
+fieldset form div input[type="reset"]
+{
+    margin: 20px 20px 0px 0px;
+}
+
+fieldset input[type="text"],
+fieldset input[type="email"],
+fieldset input[type="tel"],
+fieldset textarea
+{
+    padding: 5px 5px;
+}
 /* FOOTER */

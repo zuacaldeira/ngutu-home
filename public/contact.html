@@ -10,7 +10,6 @@
 <body>
 
     <div id="wrapper">
-
         <!-- HEADER -->
         <header id="header">
             <!-- LOGO -->
@@ -18,7 +17,6 @@
                 ngutu.org
             </div>
         </header>
-
 
         <!-- NAVIGATION -->
         <nav id="navi">
@@ -36,53 +34,49 @@
 
         <!-- CONTENT -->
         <main id="content">
-            <article  class="contact-form">
+            <article class="contact-form">
                 <h2>Contact Form</h2>
-                <div>
+                <fieldset class="clearfix">
                     <form method="get" action="" target="_blank">
-                    <p>
-                        <label>First Name</label>
-                        <input name="firstname" type="text" size="30" required>
-                    </p>
-                    <p>
-                        <label>Last Name</label>
-                        <input name="lastname" type="text" size="30" required>
-                    </p>
-                    <p>
-                        <label>Email</label>
-                        <input name="email" type="email" size="30" required>
-                    </p>
-                    <p>
-                        <label>Telephone</label>
-                        <input name="telefone" type="tel" size="30">
-                    </p>
-                    <p>
-                        <label>Mobile</label>
-                        <input name="mobile" type="tel" size="30">
-                    </p>
-                    <p>
-                        <label>Message</label>
-                        <textarea name="message" cols="30" rows="5" required>
+                        <div class="abstand">
+                            <label>First Name</label>
+                            <input name="firstname" type="text" size="30" required>
+                        </div>
+                        <div class="abstand">
+                            <label>Last Name</label>
+                            <input name="lastname" type="text" size="30" required>
+                        </div>
+                        <div class="abstand">
+                            <label>Email</label>
+                            <input name="email" type="email" size="30" required>
+                        </div>
+                        <div class="abstand">
+                            <label>Telephone</label>
+                            <input name="telefone" type="tel" size="30">
+                        </div>
+                        <div class="abstand">
+                            <label>Mobile</label>
+                            <input name="mobile" type="tel" size="30">
+                        </div>
+                        <div class="abstand">
+                            <label>Message</label>
+                            <textarea name="message" cols="30" rows="5" required>
                         </textarea>
-                    </p>
-                    <p>
-                        <label>Subscribe to our Newsletter?</label>
-                        <input name="news" type="radio" value="true">Yes 
-                        <input name="news" type="radio" value="false">No 
-                    </p>
-                    <p>
-                        <input name="cancel" type="submit" value="Cancel">
-                        <input name="save" type="submit" value="Save">
-                    </p>
-                    
-                </form>
-            </div>
-                
-            <div >
-                <h2>Where you can find us</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.268521596022!2d13.361906715807853!3d52.528575679815866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851978048ee03%3A0x6f0cc33d089cb512!2sLehrter+Str.+8%2C+10557+Berlin!5e0!3m2!1sde!2sde!4v1518046674384" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+                        </div>
+                        <div class="abstand">
+                            <input name="save" type="submit" value="Save">
+                            <input name="cancel" type="reset" value="Cancel">
+                        </div>
 
+                    </form>
+                </fieldset>
+            </article>
+
+            <article class="bottom">
+                <h2>Where you can find us</h2>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.268521596022!2d13.361906715807853!3d52.528575679815866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851978048ee03%3A0x6f0cc33d089cb512!2sLehrter+Str.+8%2C+10557+Berlin!5e0!3m2!1sde!2sde!4v1518046674384" width="75%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
             </article>
 
         </main>
@@ -90,10 +84,10 @@
         <!-- FOOTER -->
         <footer>
             <nav>
-            <ul>
-                <li><a href="#">impressum</a></li>
-                <li><a href="#">privacy</a></li>
-            </ul>
+                <ul>
+                    <li><a href="#">impressum</a></li>
+                    <li><a href="#">privacy</a></li>
+                </ul>
             </nav>
         </footer>
     </div>
