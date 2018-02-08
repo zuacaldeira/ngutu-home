@@ -161,6 +161,18 @@ main article h1
     text-align: center;
 }
 
+main article h1 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+main article h1 a:hover
+{
+    color: red;
+}
+
+
 main article h2
 {
     font-size: 2em;
@@ -206,6 +218,7 @@ main article.news
     background-color: var(--color-article);
     color: white;
 }
+
 
 main article.diaspora
 {
