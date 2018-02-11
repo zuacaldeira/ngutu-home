@@ -120,6 +120,7 @@ nav ul li a:visited {
     letter-spacing: .1em;
     word-spacing: .15em;
     color: var(--color1);
+    font-size: 1.5em;
 }
 
 
